@@ -35,9 +35,15 @@ public class ParallelBinaryWriterExample {
         String outputFilename = System.getProperty("java.io.tmpdir")+"/parallel.pbf";
         File outputFile = new File(outputFilename);
         if (outputFile.exists()) {
-            outputFile.delete();
+            boolean deleted = outputFile.delete();
+            if (!deleted) {
+                throw new RuntimeException("Could not delete temp file");
+            }
         }
-        outputFile.createNewFile();
+        boolean newFile = outputFile.createNewFile();
+        if (!newFile) {
+            throw new RuntimeException("Could not create temp file");
+        }
         OutputStream output = new FileOutputStream(outputFile);
 
         writer = new ParallelBinaryWriter(output,1, null);

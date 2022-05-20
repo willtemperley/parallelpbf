@@ -61,7 +61,7 @@ public final class DenseNodesEncoder extends OsmEntityEncoder<Node> {
     /**
      * DensNodes blob.
      */
-    private Osmformat.DenseNodes.Builder nodes = Osmformat.DenseNodes.newBuilder();
+    private final Osmformat.DenseNodes.Builder nodes = Osmformat.DenseNodes.newBuilder();
 
     /**
      * Default constructor.

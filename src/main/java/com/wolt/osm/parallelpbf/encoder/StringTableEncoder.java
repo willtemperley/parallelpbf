@@ -27,12 +27,12 @@ public class StringTableEncoder {
      * Reverse index mapping - for string already stored in the table it will map
      * string values back to their indices.
      */
-    private Map<String, Integer> indexMap = new HashMap<>();
+    private final Map<String, Integer> indexMap = new HashMap<>();
 
     /**
      * The string table.
      */
-    private Osmformat.StringTable.Builder strings = Osmformat.StringTable.newBuilder();
+    private final Osmformat.StringTable.Builder strings = Osmformat.StringTable.newBuilder();
 
     /**
      * Adds string to the string table and adds string size to the stringtable size.

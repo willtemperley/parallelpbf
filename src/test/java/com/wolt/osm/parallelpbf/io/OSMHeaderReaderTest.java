@@ -22,7 +22,6 @@ import com.wolt.osm.parallelpbf.entity.Header;
 import com.google.protobuf.ByteString;
 import crosby.binary.Fileformat;
 import crosby.binary.Osmformat;
-import lombok.var;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

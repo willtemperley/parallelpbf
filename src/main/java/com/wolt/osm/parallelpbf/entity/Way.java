@@ -40,7 +40,7 @@ public final class Way extends OsmEntity {
      * @param id Required object id.
      */
     public Way(final long id) {
-        super(id);
+        setId(id);
     }
 
     /**

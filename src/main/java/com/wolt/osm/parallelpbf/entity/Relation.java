@@ -41,7 +41,7 @@ public final class Relation extends OsmEntity {
      * @param id Sets required object id during construction.
      */
     public Relation(final long id) {
-        super(id);
+        setId(id);
     }
 
     /**

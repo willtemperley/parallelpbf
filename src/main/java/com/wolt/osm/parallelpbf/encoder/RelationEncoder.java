@@ -33,7 +33,7 @@ public final class RelationEncoder extends OsmEntityEncoder<Relation> {
     /**
      * Ways builder.
      */
-    private Osmformat.PrimitiveGroup.Builder relations = Osmformat.PrimitiveGroup.newBuilder();
+    private final Osmformat.PrimitiveGroup.Builder relations = Osmformat.PrimitiveGroup.newBuilder();
 
     /**
      * Block-wide string table encoder.

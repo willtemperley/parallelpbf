@@ -43,7 +43,6 @@ import com.wolt.osm.parallelpbf.io.OSMHeaderReader;
 import com.wolt.osm.parallelpbf.io.OSMReader;
 
 import lombok.extern.slf4j.Slf4j;
-import lombok.var;
 
 /**
  * Parallel OSM PBF format parser.

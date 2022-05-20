@@ -26,15 +26,12 @@ import com.wolt.osm.parallelpbf.parser.WayParser;
 import com.google.protobuf.InvalidProtocolBufferException;
 import crosby.binary.Osmformat;
 import lombok.extern.slf4j.Slf4j;
-import lombok.var;
 
 import java.util.concurrent.Semaphore;
 import java.util.function.Consumer;
 
 /**
  * Implemented parser for OSMHeader message.
- *
- * @see BaseParser
  */
 @Slf4j
 public class OSMDataReader extends OSMReader {

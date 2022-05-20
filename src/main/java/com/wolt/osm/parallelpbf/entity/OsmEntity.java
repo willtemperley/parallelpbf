@@ -33,10 +33,17 @@ import java.util.Map;
  */
 @Data
 public abstract class OsmEntity {
+
+    /**
+     * Default constructor.
+     */
+    public OsmEntity() {
+    }
+
     /**
      * Entry id.
      */
-    private final long id;
+    private long id;
 
     /**
      * Entry tags map. May be empty.

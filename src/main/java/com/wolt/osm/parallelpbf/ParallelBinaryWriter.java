@@ -14,8 +14,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * Parallel OSM PBF format writer.
- * <p>
- * See https://github.com/woltapp/parallelpbf for the details and usage example.
+ *
+ * See <a href="https://github.com/woltapp/parallelpbf">...</a> for the details and usage example.
  */
 @Slf4j
 public class ParallelBinaryWriter implements Closeable {
@@ -81,16 +81,13 @@ public class ParallelBinaryWriter implements Closeable {
      * Write entity to the OSM PBF file. Thread-safe.
      *
      * @param entity Node/Way/Relation entity, other entity types are ignored.
-     * @return true if Object queued for writing, false in case of error
      */
-    public boolean write(final OsmEntity entity) {
+    public void write(final OsmEntity entity) {
         try {
             writeQueue.put(entity);
         } catch (InterruptedException e) {
             log.warn("Unable to send entity for writing: {}", e.getMessage(), e);
-            return false;
         }
-        return true;
     }
 
     /**

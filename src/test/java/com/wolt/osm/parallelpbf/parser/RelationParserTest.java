@@ -20,7 +20,6 @@ package com.wolt.osm.parallelpbf.parser;
 import com.wolt.osm.parallelpbf.TestObjectsFactory;
 import com.wolt.osm.parallelpbf.entity.Relation;
 import com.wolt.osm.parallelpbf.entity.RelationMember;
-import lombok.var;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

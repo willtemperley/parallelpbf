@@ -21,7 +21,6 @@ import com.wolt.osm.parallelpbf.entity.Relation;
 import com.wolt.osm.parallelpbf.entity.RelationMember;
 import crosby.binary.Osmformat;
 import lombok.extern.slf4j.Slf4j;
-import lombok.var;
 
 import java.util.function.Consumer;
 

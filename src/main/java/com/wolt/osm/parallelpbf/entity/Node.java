@@ -30,6 +30,7 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
 public final class Node extends OsmEntity {
+
     /**
      * Constructs Node setting mandatory fields.
      * @param id Required node id.
@@ -37,7 +38,7 @@ public final class Node extends OsmEntity {
      * @param longitude Node longitude
      */
     public Node(final long id, final double latitude, final double longitude) {
-        super(id);
+        this.setId(id);
         this.lat = latitude;
         this.lon = longitude;
     }
